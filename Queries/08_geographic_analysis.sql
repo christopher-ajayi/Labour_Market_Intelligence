@@ -71,3 +71,5 @@ WHERE jpf.salary_year_avg IS NOT NULL AND
 GROUP BY location, jpf.job_title_short
 HAVING COUNT(*) >= 20
 ORDER BY avg_salary DESC
+
+
