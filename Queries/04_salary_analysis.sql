@@ -68,10 +68,6 @@ ORDER BY average_salary DESC;
 
 -- 9. Salary by Year
 
--- Since your dataset includes 2022 and 2023, compare average salaries by year.
--- Did average salaries increase?
---Which roles saw the biggest changes?
-
 SELECT  
         EXTRACT(YEAR FROM job_posted_date) AS YEAR,
         count(*) as total_entries,
