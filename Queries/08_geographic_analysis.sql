@@ -57,4 +57,17 @@ FROM job_postings_fact jpf
 WHERE job_location <> 'Anywhere'
 GROUP BY "location", jpf.job_title_short 
 HAVING COUNT(*) >=1000
-ORDER BY title_count desc
+ORDER BY title_count DESC
+
+
+--6. Salary by Location and Job Title
+SELECT jpf.job_location as location,
+         jpf.job_title_short AS job_title,
+      ROUND(AVG(jpf.salary_year_avg),2) avg_salary,
+       COUNT(*) AS salary_records
+FROM job_postings_fact jpf 
+WHERE jpf.salary_year_avg IS NOT NULL AND 
+         job_location <> 'Anywhere'
+GROUP BY location, jpf.job_title_short
+HAVING COUNT(*) >= 20
+ORDER BY avg_salary DESC
