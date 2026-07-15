@@ -1,2 +1,11 @@
 /.vscode
 /csv_files
+.env
+.ipynb
+.py
+/notebooks
+LIM.session.sql
+analysis.py
+read_data.py
+test_postgres.py
+list_tables.py

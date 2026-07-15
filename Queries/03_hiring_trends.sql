@@ -2,6 +2,14 @@
  * The following questions provide insights into what the demand for data professsional is like.
  * 
  */
+
+SELECT DISTINCT jpf.job_via,
+        job_location
+FROM job_postings_fact jpf 
+WHERE jpf.job_country = 'Canada'
+
+
+
 -- 1. How many jobs are posted for each job title?
 SELECT
     job_title_short AS job_title,
