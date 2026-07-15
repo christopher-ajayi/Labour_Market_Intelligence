@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW jobs_master_view AS
+CREATE OR REPLACE VIEW jobs_master AS
 
 SELECT
     j.job_id,
