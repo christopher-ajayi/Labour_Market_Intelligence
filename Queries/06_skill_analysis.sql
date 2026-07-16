@@ -123,7 +123,7 @@ jpf.job_id = sjd.job_id
 WHERE jpf.salary_year_avg IS NOT NULL
 GROUP BY sd.skills
 ORDER BY job_count DESC
-LIMIT 20
+LIMIT 10
 
 
 -- Demand -- Compensation -- Capabilities -- 
