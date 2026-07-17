@@ -1,3 +1,65 @@
+# Labour Market Intelligence Analysis
+
+## Project Overview
+
+This project analyzes job posting data to identify labour market trends, salary patterns, and in-demand skills for data-related roles.
+
+The analysis combines PostgreSQL and Python to transform raw job posting data into actionable insights.
+
+---
+
+## Tools Used
+
+- PostgreSQL
+- Python
+- Pandas
+- Matplotlib
+- Jupyter Notebook
+
+---
+
+## Project Questions
+
+This project answers the following questions:
+
+1. What does the job market look like?
+2. Which companies are hiring the most?
+3. Where are the jobs located?
+4. What skills are most in demand?
+5. Which skills are associated with higher salaries?
+6. How do salaries vary across job roles?
+7. Do remote jobs offer higher salaries?
+
+---
+
+# Key Findings
+
+- Senior Data roles represent a significant portion of the job postings, highlighting strong demand for senior professionals.
+- SQL is among the most frequently requested skills, confirming its importance as a foundational skill for data roles.
+- Technical and specialized skills are associated with differences in salary outcomes across the labour market.
+- Salary levels vary across data-related career paths, with more specialized roles generally commanding higher compensation.
+- Remote opportunities represent an important part of the current labour market.
+
+---
+
+## Project Structure
+
+```
+Labour_Market_Intelligence/
+
+├── notebooks/
+│   └── 02_labour_market_analysis.ipynb
+│
+├── sql/
+│   └── jobs_master_view.sql
+│
+├── README.md
+│
+├── requirements.txt
+└── .gitignore
+```
+
+
 # labour-market-intelligence
 
 # Project Overview

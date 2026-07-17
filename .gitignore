@@ -1,11 +1,7 @@
 /.vscode
 /csv_files
 .env
-.ipynb
-.py
-/notebooks
+.venv
+/01_python_practice_folder
 LIM.session.sql
 analysis.py
-read_data.py
-test_postgres.py
-list_tables.py
