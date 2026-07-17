@@ -2,131 +2,173 @@
 
 ## Project Overview
 
-This project analyzes job posting data to identify labour market trends, salary patterns, and in-demand skills for data-related roles.
+This project analyzes 2022-2023 job posting data for data-related roles to identify labour market trends, salary patterns, geographic differences, and in-demand technical skills.
 
-The analysis combines PostgreSQL and Python to transform raw job posting data into actionable insights.
+The project demonstrates an end-to-end data analytics workflow by combining PostgreSQL, SQL, Python, and data visualization techniques to transform raw job posting data into actionable labour market insights.
 
----
-
-## Tools Used
-
-- PostgreSQL
-- Python
-- Pandas
-- Matplotlib
-- Jupyter Notebook
+The analysis is designed to provide insights for:
+- Data professionals seeking career opportunities
+- Employers monitoring hiring trends
+- Decision-makers interested in workforce demand patterns
 
 ---
 
-## Project Questions
+# Project Objectives
 
-This project answers the following questions:
+The objectives of this project are to:
 
-1. What does the job market look like?
-2. Which companies are hiring the most?
-3. Where are the jobs located?
-4. What skills are most in demand?
-5. Which skills are associated with higher salaries?
-6. How do salaries vary across job roles?
-7. Do remote jobs offer higher salaries?
+- Analyze hiring trends across data-related roles
+- Identify the most in-demand technical skills
+- Examine salary patterns across job titles and locations
+- Compare remote and on-site opportunities
+- Understand geographic differences in labour demand
+- Demonstrate an end-to-end analytics workflow
+
+---
+
+# Dataset Description
+
+The dataset contains job postings for data-related roles collected during 2022 and 2023.
+
+Key information includes:
+
+- Job titles
+- Salaries
+- Companies
+- Locations
+- Remote work arrangements
+- Posting dates
+- Required technical skills
+
+**Dataset Source:** Luke Barousse Data Analytics SQL Course Dataset
+
+---
+
+# Tools and Technologies
+
+| Category | Tools |
+|---|---|
+| Database | PostgreSQL |
+| SQL Development | SQL, DBeaver |
+| Programming | Python |
+| Python Libraries | Pandas, Matplotlib |
+| Analysis Environment | Jupyter Notebook, VS Code |
+| Visualization | Power BI |
+| Version Control | Git, GitHub |
+
+---
+
+# Project Workflow
+
+## 1. Data Loading and Database Preparation
+
+- Loaded raw job posting data into PostgreSQL
+- Created structured tables for analysis
+- Prepared data for SQL querying
+
+## 2. SQL Analysis
+
+Used SQL to investigate: [SQL Commands](/sql/)
+
+- Hiring trends
+- Salary distributions
+- Job titles with highest demand
+- In-demand skills
+- Remote work patterns
+- Geographic differences
+
+## 3. Python Analysis
+
+Used Python for:
+
+- Data extraction
+- Data cleaning
+- Exploratory Data Analysis (EDA)
+- Statistical summaries
+- Data visualization
+
+## 4. Visualization and Reporting
+
+Future enhancement:
+
+- Development of an interactive Power BI dashboard
+- Presentation of executive-level labour market insights
+
+---
+
+# Project Questions
+
+## Hiring Trends
+
+- Which companies posted the most data-related jobs?
+- Which job titles were most in demand?
+- How did hiring activity change over time?
+
+## Salary Analysis
+
+- What are the average salaries by job title?
+- Which roles and locations offer higher compensation?
+- Are remote roles associated with different salary levels?
+
+## Skills Analysis
+
+- Which technical skills are most frequently requested?
+- Which skills are associated with higher salaries?
+
+## Remote Work Analysis
+
+- What proportion of jobs are remote?
+- Which roles have the highest remote opportunities?
+- How do remote and non-remote salaries compare?
+
+## Geographic Analysis
+
+- Which locations have the highest job opportunities?
+- Where are salaries highest?
+- How does labour demand vary geographically?
 
 ---
 
 # Key Findings
 
-- Senior Data roles represent a significant portion of the job postings, highlighting strong demand for senior professionals.
-- SQL is among the most frequently requested skills, confirming its importance as a foundational skill for data roles.
-- Technical and specialized skills are associated with differences in salary outcomes across the labour market.
-- Salary levels vary across data-related career paths, with more specialized roles generally commanding higher compensation.
-- Remote opportunities represent an important part of the current labour market.
+- Senior-level data roles represent a significant portion of job postings, indicating continued demand for experienced professionals.
+- SQL remains one of the most frequently requested technical skills across data-related positions.
+- Specialized technical skills are associated with differences in salary outcomes.
+- Salary levels vary considerably across data career paths.
+- Remote work represents an important component of the modern data labour market.
 
 ---
 
-## Project Structure
+# Repository Structure
+
 
 ```
 Labour_Market_Intelligence/
 
+├── graph/
 ├── notebooks/
-│   └── 02_labour_market_analysis.ipynb
-│
+├── python_scripts/
 ├── sql/
-│   └── jobs_master_view.sql
-│
 ├── README.md
-│
 ├── requirements.txt
 └── .gitignore
 ```
 
 
-# labour-market-intelligence
+---
 
-# Project Overview
-This project analyzes the 2023 data job market using SQL, PostgreSQL, Python, and Power BI. The objective is to identify hiring trends, salary patterns, in-demand skills, and geographic differences in order to generate insights for job seekers, employers, and business decision-makers.
+# Future Improvements
 
-# Project Objective
-- Analyze hiring trends across data-related roles.
-- Identify the highest-paying jobs and locations.
-- Determine the most in-demand technical skills.
-- Compare remote and on-site job opportunities.
-- Generate business insights through data analysis.
-- Build an interactive dashboard for decision-makers.
+Potential improvements for this project include:
 
-# Dataset Description 
-The dataset contains job postings for data-related roles collected during 2023. It includes information on job titles, salaries, companies, locations, work arrangements (remote/on-site), posting dates, and required technical skills.
-Source: Luke Barousse Data Analytics SQL Course Dataset
+- Develop an interactive Power BI dashboard
+- Automate data collection and refresh workflows
+- Expand analysis to additional labour market datasets
+- Build predictive models for salary estimation
+- Incorporate machine learning techniques for job trend forecasting
 
-# Tools Used
-PostgreSQL, SQL, DBeaver, VS Code, Python, Power BI, Git, GitHub
+---
 
-# Skills Demonstrated
-- SQL
-- PostgreSQL
-- Data Cleaning
-- Exploratory Data Analysis
-- Data Visualization
-- Dashboard Development
-- Python
-- Business Intelligence
+# Author
 
-# Planned Analysis
-This project seeks to provide answers to the following questions:
-
-# Hiring Trends
-- Which companies posted the most data-related jobs?
-- Which job titles were most in demand?
-- How did hiring vary by month and quarter?
-
-# Salary Analysis
-- What is the average salary for each job title?
-- Which locations offer the highest salaries?
-- Which companies pay the highest salaries?
-- Is there a salary premium for remote jobs?
-
-# Skills Analysis
-- Which technical skills are most frequently requested?
-- Which skills are associated with higher salaries?
-- Which skills commonly appear together?
-
-# Remote Work
-- What percentage of jobs are remote?
-- Which job titles have the highest proportion of remote opportunities?
-- Do remote jobs pay differently than on-site jobs?
-
-# Geographic Analysis
-- Which countries have the most job opportunities?
-- Which locations offer the highest salaries?
-- How does hiring vary by region?
-
-# Business Insights
-- What skills should aspiring data professionals prioritize?
-- Which industries are hiring the fastest?
-- What hiring trends should employers monitor?
-
-# Future Enhancements
-- Build an interactive Power BI dashboard
-- Perform salary forecasting using Python
-- Conduct statistical analysis of salary determinants
-- Publish executive findings and recommendations
-
+Christopher Ajayi
